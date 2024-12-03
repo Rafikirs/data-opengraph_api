@@ -14,4 +14,4 @@ def fetch_metadata(url):
     response = requests.get(final_url, params)
     if response.status_code != 200:
         return {}
-    return response.json()
+    return response.json()['data']
